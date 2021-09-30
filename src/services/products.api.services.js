@@ -5,12 +5,17 @@ export const getProducts = () => {
 export const postProduct = (item) => {
     return fetch('http://localhost:3000/products', {
         method: 'POST',
-        body: JSON.stringify(
-            item
-        ),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
+        body: JSON.stringify(item),
+        headers: {'Content-type': 'application/json; charset=UTF-8',},
+    })
+        .then((response) => response.json())
+}
+
+export const updateProduct = (id, item) => {
+    return fetch('http://localhost:3000/products/' + id, {
+        method: 'PUT',
+        body: JSON.stringify(item),
+        headers: {'Content-type': 'application/json; charset=UTF-8',},
     })
         .then((response) => response.json())
 }
@@ -20,4 +25,3 @@ export const deleteProduct = (id) => {
         method: 'DELETE',
     });
 }
-

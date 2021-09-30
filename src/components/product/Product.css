@@ -1,0 +1,62 @@
+.product_card {
+    width: 25%;
+    margin: 4%;
+    border: 3px solid #fa5974;
+    box-sizing: border-box;
+}
+
+.product_card .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.product_card .product > h3, h5 {
+    margin: 3px 0;
+}
+
+.product_card .product .img_container {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons_container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.buttons_container .details_link, .delete_button {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    box-sizing: border-box;
+}
+
+.buttons_container .delete_button {
+    background: #fff;
+    border-top: 3px solid #fa5974;
+    border-right: 3px solid #fa5974;
+}
+
+.buttons_container .details_link {
+    color: #fff;
+    background: #fa5974;
+    border-top: 3px solid #fa5974;
+}
+
+.buttons_container .delete_button:hover {
+    background: #ffb5b5;
+}
+
+.buttons_container .details_link:hover {
+    background: #ffb5b5;
+    color: #000;
+}

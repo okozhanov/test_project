@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Headline {
+    color: #fff;
+    transition: 300ms;
+}
+
+.App > h1 {
+    margin: 0;
+    padding: 30px;
+    background: #fa5974;
+}
+
+#Headline:hover {
+    color: #ffb5b5;
+}

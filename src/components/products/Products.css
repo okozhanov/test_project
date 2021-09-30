@@ -1,0 +1,19 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products_page > button {
+    cursor: pointer;
+    margin: 30px;
+    font-size: 18px;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #fa5974;
+    transition: 400ms;
+}
+
+.products_page > button:hover {
+    background: #fa5974;
+    color: #fff;
+}

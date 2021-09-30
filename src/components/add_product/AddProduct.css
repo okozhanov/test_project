@@ -1,0 +1,24 @@
+.save_button {
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border: 3px solid #fa5974;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.save_button:hover {
+    background: #fa5974;
+    color: #fff;
+}
+
+.cancel_button {
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 300ms;
+}
